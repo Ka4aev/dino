@@ -1,0 +1,109 @@
+* {
+    box-sizing: border-box; }
+/* общие настройки страницы */
+html, body {
+    height: 100%;
+}
+
+/* ставим тёмный фон и растягиваем на всю высоту */
+body {
+    background: #FFDFC5;
+    min-height: 100%;
+    font-family: "Arial", sans-serif;
+}
+
+/* стили основного блока */
+.wrap {
+    /* устанавливаем относительное позиционирование */
+    position: relative;
+    /* высота элементов */
+    height: 100%;
+    /* минимальная высота и отступы */
+    min-height: 500px;
+    padding-bottom: 20px;
+}
+.sec{
+    position: absolute;
+    top: 27%;
+    right:28%;
+    color: black;
+    font-size: 1rem;
+    font-family: sans-serif;
+}
+body {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+span{
+    position: absolute;
+    top:25%;
+    right: 30%;
+}
+.press{
+    position: absolute;
+    color: grey;
+    font-size: 0.9rem;
+    top: 63%;
+    right:27.5%
+}
+#output {
+    color: black;
+    font-size: 2rem;
+    font-family: sans-serif; }
+
+.game{
+    width: 45%;
+    height: 25.5%;
+    border-bottom: 1px #000 solid;
+    margin: auto;
+}
+#cooker{
+    width: 50px;
+    height: 50px;
+    background-image: url("img/cooker1.png");
+    background-size: 50px 50px;
+    position: relative;
+    top: 145px;
+}
+#cake{
+    width: 65px;
+    height: 45px;
+    background-image: url("img/cake1.png");
+    background-size: 65px 45px;
+    position: relative;
+    top: 110px;
+    left: 580px;
+    animation: cakeMov 1s infinite linear;
+}
+@keyframes cakeMov {
+    0%{
+        left: 580px;
+    }
+    100%{
+        left: -20px;
+    }
+}
+.jump{
+    animation: jump 0.4s linear;
+}
+@keyframes jump {
+    0%{
+        top: 150px;
+    }
+    30%{
+        top: 120px;
+    }
+    50%{
+        top: 70px;
+    }
+    80%{
+        top: 120px;
+    }
+    100%{
+        top: 150px;
+    }
+}

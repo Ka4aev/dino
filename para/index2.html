@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ru" >
+<head>
+    <meta charset="UTF-8">
+    <title>Найди пару</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- подключаем нормализатор CSS -->
+    <!-- подключаем свои стили -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+<!-- общий блок для всего -->
+<div class="wrap">
+    <!-- блок с игрой -->
+    <div class="game"></div>
+    <!-- модальное окно, которое появится после сбора всех пар -->
+    <div class="modal-overlay">
+        <div class="modal">
+            <!-- поздравительная надпись -->
+            <h2 class="winner">Победа!</h2>
+            <!-- кнопка перезапуска игры -->
+            <button class="restart">Сыграем ещё?</button>
+        </div>
+    </div>
+</div>
+
+<!-- подключаем jQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<!-- и наш скрипт -->
+<script  src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,800;1,900&family=Lato:wght@400;700;900&family=Libre+Baskerville&family=Public+Sans:wght@200;400&family=Roboto:ital,wght@0,100;0,300;1,100&display=swap');
+*{padding: 0;margin: 0;border: 0;}
+*,*:before,*:after{-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+nav,footer,header,aside{display: block;}
+html,body{
+    height:100%;width:100%;
+    font-size:100%;line-height:1;-ms-text-size-adjust:100%;-moz-text-size-adjust:100%;-webkit-text-size-adjust:100%;}
+input,button,textarea{font-family:inherit;}
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner{padding:0;border:0;}
+a,a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
+a{color:inherit;}
+
+* {
+    box-sizing: border-box;
+}
+
+/* общие настройки страницы */
+html, body {
+    height: 100%;
+}
+.wrapper{
+    height: 100vh;
+}
+
+/* ставим тёмный фон и растягиваем на всю высоту */
+body {
+    background: #FFEBC5;
+    min-height: 100%;
+    font-family: "JetBrains Mono", sans-serif;
+}
+header{
+    display: flex;
+    width: 100%;
+    height: 430px;
+    background: #FFBF40;
+    position: relative;
+}
+.ellipse{
+    display: flex;
+    position: absolute;
+    right: 20% ;
+    width: 940px;
+    height: 280px;
+    justify-content: center;
+    align-items: flex-end;
+    align-self: flex-end;
+}
+.buttons{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: auto;
+    width: auto;
+}
+button{
+    margin-top: 40px;
+    width: 700px;
+    height: 6rem;
+    flex-shrink: 0;
+    box-shadow: 0 7px 4px 0 rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+    border: 5px solid #FA0;
+    background: #FA0;
+    color:#FDEED0;
+    font-size: 2.3rem;
+    font-style: normal;
+    transition: all .2s ease-in-out;
+}
+button:hover{
+    color:#FFAA00;
+    background: #FFEBC5C9;
+}
+.header__letter{
+    display: flex;
+    position: absolute;
+    top: 16%;
+    right: 55%;
+    color: #542600;
+    font-size: 4.2rem;
+    font-style: normal;
+    line-height: normal;
+}
+.H{
+    position: absolute;
+    transform: rotate(-10.114deg);
+
+}
+.o{
+    position: absolute;
+    transform: rotate(-2.194deg);
+    right:52.3%;
+    top: 15%;
+}
+.m{
+    position: absolute;
+    transform: rotate(5.742deg);
+    right:49.6%;
+    top: 15%;
+}
+.e{
+    position: absolute;
+    transform: rotate(13.261deg);
+    right:46.9%;
+    top: 15.5%
+}
